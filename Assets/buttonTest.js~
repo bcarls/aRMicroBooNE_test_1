@@ -15,8 +15,14 @@ function OnGUI () {
           if(child.name == "Cryostat_001" || child.name == "Endcap"){
             if(child.GetComponent(MeshRenderer).enabled == true)
               child.GetComponent(MeshRenderer).enabled = false;
-            //if(child.GetComponent(MeshRenderer).enabled == false)
-              //child.GetComponent(MeshRenderer).enabled = true;
+            else  
+              child.GetComponent(MeshRenderer).enabled = true;
+          }
+          if(child.name == "Cathode"){
+            if(child.GetComponent(MeshRenderer).enabled == true)
+              child.GetComponent(MeshRenderer).enabled = false;
+            else  
+              child.GetComponent(MeshRenderer).enabled = true;
           }
         }
         
